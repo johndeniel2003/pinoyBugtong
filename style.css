@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comfortaa' ,sans-serif;
+}
+
+:root{
+    --primary-color: #0E0847;
+    --primary-text-color: #fff;
+    --secondary-text-color: #E9E9EE;
+    --third-text-color: #C6C6CB;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #0E0847 !important;
+}
+
+.title h1{
+    color: var(--primary-text-color);
+    font-weight: 900;
+    font-size: 4.5rem;
+}
+
+.bugtong-container{
+    width:  800px;
+    min-height: 300px;
+    height: auto;
+    display: flex;
+    border: 1px solid #333397;
+    border-radius: 5px;
+    padding: 20px 20px;
+    position: relative;
+    align-items: center;
+    gap: 50px;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.bugtong-contents{
+    display: flex;
+    align-items: center;
+}
+
+.question{
+    text-align: center;
+}
+
+.question-col{
+    flex: 1;
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.bugtong-container img{
+    height: 100%;
+    width: 40%;
+}
+
+.question-num p{
+    color: #4f4f91;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.question h5{
+    font-size: 20px;
+    line-height: 40px;
+    color: var(--primary-text-color);
+}
+
+.answer-col{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.input-area{
+    overflow: hidden;
+    height: 40px;
+    width: 70%;
+    display: flex;
+    padding: 5px 5px;
+    border-radius: 5px;
+    background: #333397;
+    
+}
+
+.input-area input{
+    outline: none;
+    flex: 1;
+    background-color: transparent;
+    border: none;
+    color: var(--secondary-text-color);
+}
+
+.input-area input::placeholder{
+    color: var(--secondary-text-color);
+}
+
+.button-area{
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 70%;
+    gap: 10px;
+}
+
+.button-area button{
+    padding: 10px;
+    border: none;   
+    border-radius: 5px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.button-area button:nth-child(1){
+    background-color: #080424;
+    color: var(--secondary-text-color);
+}
+
+.button-area button:nth-child(2){
+    color: var(--primary-color);
+    background-color: var(--third-text-color);
+}
+
+
+.create-question{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 13px;
+}
+
+.create-question button{
+    padding: 8px;
+    border: none;   
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #333397;
+    color: var(--secondary-text-color);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#AddBtn{
+    background-color: #080424;
+    color: #fff;
+}
+
+#CloseBtn{
+    background-color: var(--third-text-color);
+    color: #080424;
+}
+
+@media all and (max-width: 900px) {
+    .bugtong-container{
+        width:  100%;
+        min-height: 100%;
+        height: auto;
+        display: flex;
+        border: none;
+        border-radius: 5px;
+        padding: 20px 20px;
+        position: relative;
+        align-items: center;
+        gap: 50px;
+        flex-direction: column;
+        box-shadow: none;
+    }
+
+    .title h1{
+        font-size: 3rem;
+        margin-top: 10%;
+    }
+}
+
+@media all and (max-width: 700px) {
+    .bugtong-contents{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+
+
+    .input-area{
+        overflow: hidden;
+        height: 40px;
+        width: 100%;
+        display: flex;
+        padding: 5px 5px;
+        border-radius: 5px;
+        background: #333397;
+        
+    }
+
+    .button-area{
+        display: grid;
+        grid-template-columns: auto auto;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .bugtong-container img{
+        height: 100%;
+        width: 60%;
+    }
+    
+
+    .create-question{
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        font-size: 13px;
+    }
+}

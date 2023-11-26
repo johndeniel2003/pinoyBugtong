@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/f59b89817d.js" crossorigin="anonymous"></script>
+    <title>Pinoy Bugtong</title>
+</head>
+<body>
+    <div class="create-question-container">
+        <div class="modal fade" id="createQuestion" data-bs-backdrop="static" data-bs-keyboard="true" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="staticBackdropLabel">Create Bugtong Question</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="input-question">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control createdQuestion " required id="floatingInput" placeholder="Bugtong Question">
+                            <label for="floatingInput">Bugtong</label>
+                          </div>
+                          <div class="form-floating">
+                            <input type="text" class="form-control createdAnswer" required id="floatingPassword" placeholder="Bugtong Answer">
+                            <label for="floatingPassword">Sagot</label>
+                          </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn " id="CloseBtn" data-bs-dismiss="modal">Close</button>
+                  <button type="submit" class="btn" id="AddBtn">Create</button>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+
+    <div class="bugtong-container">
+        <div class="title">
+            <h1>Pinoy Bugtong</h1>
+        </div>
+ <div class="bugtong-contents">
+    <img src="img/undraw_questions_re_1fy7.svg" alt="">
+    <div class="question-col">
+      <div class="create-question">
+<button type="button"  data-bs-toggle="modal" data-bs-target="#createQuestion">
+  Create Bugtong
+</button>
+      </div>
+      <div class="question-num">      
+      </div>    
+      <div class="question">          
+      </div>
+      <div class="answer-col">
+          <div class="input-area">
+              <input type="text" placeholder="Ano ang iyong sagot?" id="answer">
+          </div>
+          <div class="button-area">
+              <button id="submit">Submit</button>
+              <button id="nextQ">Next</button>
+          </div>
+      </div>
+    </div>
+ </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="app.js" type="module"></script>
+</body>
+</html>
